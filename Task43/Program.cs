@@ -20,15 +20,15 @@ int[] StringToInt() //возвращает введенные b и k через 
 int [] crossing (int [] array)
 {
     int [] result2 = new int [2];
-    result2 [1] = (array[3]-array[1])/(array[2]-array[4]);
-    result2 [2] = array[2]*result2[1]+array[1];
+    result2 [0] = (array[2]-array[0])/(array[1]-array[4]);
+    result2 [1] = array[1]*result2[0]+array[0];
     return result2; 
 }
 Console.ReadLine();
 System.Console.WriteLine("hi");
 int [] array1 = StringToInt(); 
 int [] result1 = crossing(array1);
-System.Console.WriteLine($"y = {array1[2]}*x + {array1[1]}");
-System.Console.WriteLine($"y = {array1[4]}*x + {array1[3]}");
-System.Console.WriteLine($"точка пересечения уравнений: x = {result1[1]}; y = {result1[2]} ");
+System.Console.WriteLine($"y = {array1[1]}*x + {array1[0]}");
+System.Console.WriteLine($"y = {array1[3]}*x + {array1[2]}");
+System.Console.WriteLine($"точка пересечения уравнений: x = {result1[0]}; y = {result1[1]} ");
 
